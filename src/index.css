@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #080b12;
+  color: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(129, 140, 248, 0.14), transparent 26%),
+    #080b12;
+  color: #f8fafc;
+}
+
+body.light {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(129, 140, 248, 0.14), transparent 26%),
+    #f8fafc;
+  color: #0f172a;
+}
+
+body.light [class*='bg-slate-950'],
+body.light [class*='bg-slate-900'] {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+}
+
+body.light [class*='border-slate-800'],
+body.light [class*='border-slate-700'] {
+  border-color: rgba(148, 163, 184, 0.36) !important;
+}
+
+body.light [class*='text-slate-50'],
+body.light [class*='text-slate-100'],
+body.light [class*='text-slate-200'] {
+  color: #0f172a !important;
+}
+
+body.light [class*='text-slate-300'],
+body.light [class*='text-slate-400'],
+body.light [class*='text-slate-500'],
+body.light [class*='text-slate-600'] {
+  color: #475569 !important;
+}
+
+body.light [class*='text-slate-700'],
+body.light [class*='text-slate-800'],
+body.light [class*='text-slate-900'] {
+  color: #0f172a !important;
+}
+
+body.light [class*='bg-slate-50'],
+body.light [class*='bg-white'] {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+}
+
+body.light input,
+body.light textarea,
+body.light button,
+body.light a {
+  transition: all 0.2s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.32);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

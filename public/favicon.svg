@@ -1,0 +1,11 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Lê Phú An monogram logo">
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#080b12" />
+  <path d="M36 94V34h14l17 26 17-26h14v60H84V60L67 89H61L44 60v34H36z" fill="url(#g)"/>
+  <circle cx="95" cy="35" r="6" fill="#22d3ee" opacity="0.9"/>
+</svg>
